@@ -1,4 +1,5 @@
 //Instructions at:https://core-electronics.com.au/guides/using-usb-and-bluetooth-controllers-with-python
+//If I get errors, it could help to hard restart my Puck.js, connect on Espruino Web IDE, upload (flash) the code, then turn on/off bluetooth on my LAPTOP and reconnect again. 
 
 var kb = require("ble_hid_keyboard");
 NRF.setServices(undefined, { hid : kb.report });
