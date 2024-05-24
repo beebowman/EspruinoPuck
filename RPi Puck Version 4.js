@@ -1,6 +1,10 @@
 //Instructions at:https://core-electronics.com.au/guides/using-usb-and-bluetooth-controllers-with-python
 //If I get errors, it could help to hard restart my Puck.js, connect on Espruino Web IDE, upload (flash) the code, then turn on/off bluetooth on my LAPTOP and reconnect again. 
 
+//If you get Uncaught Error: BLE HID not enabled, go here: https://forum.espruino.com/conversations/301020/
+//Connect/pair the button, then go to bluetooth menu and turn on/off the main blue bluetooth toggle button 
+//(not the button associated with any specific device, just the general bluetooth toggle on mac) 
+
 var kb = require("ble_hid_keyboard");
 NRF.setServices(undefined, { hid : kb.report });
 var reset_timer;
